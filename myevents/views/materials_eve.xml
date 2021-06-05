@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="material_view_form" model="ir.ui.view">
+        <field name="name">materials.form</field>
+        <field name="model">material.materials</field>
+        <field name="arch" type="xml">
+            <form >
+
+                <sheet>
+                    
+                    <div style="margin-top: 30px; background-color:#D5D5E7;padding: 10px;border-radius: 5px;">
+                      
+
+                                <group name="container_row_2" string="Material"> 
+                                  
+                                    <h2>
+                                        Name : 
+                                        <field name="sound_equipment"/>
+                                    </h2>
+                                    <h4>             
+                                        <field name="projection_equipment_ids" /> 
+                                    </h4> 
+                                            
+                                            
+                                                    
+                                             
+                                        
+                                
+                                </group>
+                    </div>
+                </sheet> 
+            </form>
+        </field>
+    </record>
+<record id="material_view_tree" model="ir.ui.view">
+    <field name="name">material.tree</field>
+    <field name="model">material.materials</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="sound_equipment"/>
+        </tree>
+    </field>
+</record>
+    <record  model="ir.actions.act_window" id="material_list_action">
+        <field name="name">Materials</field>
+        <field name="res_model">material.materials</field>
+        <field name = "view_mode">tree,form</field>
+        <field name = "help" type="html">
+            <p class = "o_view_nocontent_smiling_face">Create the first Material</p>
+        </field>
+    </record>
+
+
+<menuitem id="material_menu" name="Materials"  parent="main_my_events_menu" action = "material_list_action"/>
+
+<!-- <menuitem id="courses_menu" name="material"  parent="my_events_menu" /> -->
+
+</odoo>

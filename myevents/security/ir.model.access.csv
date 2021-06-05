@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+organizers_user,organizers.user,model_organizer_organizers,base.group_user,1,1,1,1
+materials_user,materials.user,model_material_materials,base.group_user,1,1,1,1
+equipment_user,equipment.user,model_material_equipment,base.group_user,1,1,1,1

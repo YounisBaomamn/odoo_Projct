@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "My Events",
+    'name': "Custom Events",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -29,7 +29,8 @@
         'views/enevt_tesit.xml',
         'views/organizer_eve.xml',
         'views/materials_eve.xml',
-        'views/material_equipment.xml'
+        'views/material_equipment.xml',
+        'reports/report.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

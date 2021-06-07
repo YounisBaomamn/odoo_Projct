@@ -19,7 +19,7 @@
             "request": "launch",
             "program": "/home/yunis/odoo_ap/odoo-14.0/odoo-bin",
             "args": [
-                "--config=/home/yunis/odoo_ap/odoo-14.0/debian/odoo.conf","-u","myevents" 
+                "--config=/home/yunis/odoo_ap/odoo-14.0/debian/odoo.conf","-u","custom_events" 
             ],
             "console": "internalConsole"
         }

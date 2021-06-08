@@ -5,6 +5,6 @@ from odoo import models, fields, api
 class CustomPartner(models.Model):
     _inherit = 'res.partner'
     
-    partner = fields.Boolean(string='Partner')
+    is_organization = fields.Boolean(string='Is Organization')
     
    

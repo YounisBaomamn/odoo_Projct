@@ -2,7 +2,7 @@
 <odoo>
     <record id="orgainzer_view_form" model="ir.ui.view">
         <field name="name">orgainzer.form</field>
-        <field name="model">organizer.organizers</field>
+        <field name="model">organizer</field>
         <field name="arch" type="xml">
             <form >
                 <sheet >
@@ -30,7 +30,7 @@
 
     <record id="orgainzer_view_tree" model="ir.ui.view">
         <field name="name">orgainzer.tree</field>
-        <field name="model">organizer.organizers</field>
+        <field name="model">organizer</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="last_name"/>
@@ -43,11 +43,13 @@
 
     <record  model="ir.actions.act_window" id="organizer_list_action">
         <field name="name">Organizer</field>
-        <field name="res_model">organizer.organizers</field>
+        <field name="res_model">organizer</field>
         <field name = "view_mode">tree,form</field>
         <field name = "help" type="html">
             <p class = "o_view_nocontent_smiling_face">Create the first Organizer</p>
         </field>
     </record>
+    <menuitem id="main_cust_events_menu" name="Custom Events" />
+    <menuitem id="cust_events_menu" name="Reporing"  parent="main_cust_events_menu" sequence="1" />
     <menuitem id="Organizer_menu" name="Organizer"  parent="cust_events_menu" action = "organizer_list_action"/>
 </odoo>

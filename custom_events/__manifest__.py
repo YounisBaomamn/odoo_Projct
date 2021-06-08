@@ -25,12 +25,10 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/templates.xml',
-        'views/enevt_tesit.xml',
-        'views/organizer_eve.xml',
-        'views/materials_eve.xml',
-        'views/material_equipment.xml',
-        'reports/report.xml'
+        'views/cust_event.xml',
+        'views/organizer.xml',
+        'views/materials.xml',
+        'views/cu_partner.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
